@@ -5,6 +5,11 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+  packages: write
+  pull-requests: write
+
 jobs:
   call-central-release:
     uses: "Ooops-Studio/.github/.github/workflows/release.yml@main"
